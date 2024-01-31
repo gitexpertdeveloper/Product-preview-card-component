@@ -1,0 +1,172 @@
+:root{
+
+    --color-green: hsl(158, 36%, 37%);
+    --color-gray: #6c7289;
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: hsl(30, 38%, 92%);
+}
+section.image-field{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+
+}
+
+.image-box{
+    width: 369px;
+    background: none;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.desktop-img{
+
+    width: 369px;
+    margin-bottom: -4px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.product-des-field {
+	background: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+    align-items: start;
+	width: 330px;
+	padding: 30px;
+	height: 494px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.min-title{
+
+    margin: 0;
+    font-family: 'Montserrat' , sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 200;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+
+}
+
+.product-title {
+
+	font-family: 'Fraunces' , sans-serif;
+	font-weight: 700;
+	font-size: 45.1px;
+	margin-top: 20px;
+	line-height: 50px;
+}
+
+.product-des {
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 500;
+	color: #6c7289;
+	line-height: 29px;
+	font-size: 19px;
+	margin-top: -12px;
+}
+
+.price-box{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    gap: 21px;
+    margin-top: -22px;
+}
+
+.price-off {
+	color: var(--color-green);
+	font-size: 38px;
+	font-family: 'Fraunces';
+}
+
+.price{
+    font-family: 'Montserrat' ;
+    color: var(--color-gray);
+    text-decoration: line-through;
+    font-size: 17px;
+
+}
+
+.btn-box {
+	background: var(--color-green);
+	padding: 15px 95px 13px 95px;
+	border-radius: 9px;
+    transition: background 0.5 ease;
+}
+
+.add-to-cart-icon {
+	padding-right: 9px;
+}
+
+.btn{
+
+    color: white;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.btn-box:hover {
+	background: #044439;
+	padding: 15px 95px 13px 95px;
+	border-radius: 9px;
+}
+
+@media all and (min-width:300px) and (max-width:767px){
+    body{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    section.image-field{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+    }
+    .desktop-img {
+        width: 369px;
+        margin-bottom: -4px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .product-des-field {
+        background: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+        width: 313px;
+        padding: 30px;
+        height: 494px;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .btn-box {
+        background: var(--color-green);
+        padding: 15px 93px 13px 93px;
+        border-radius: 9px;
+        transition: background 0.5 ease;
+    }
+    .btn-box:hover {
+        background: #044439;
+        padding: 15px 93px 13px 93px;
+        border-radius: 9px;
+        transition: background 0.5 ease;
+    }
+
+}
